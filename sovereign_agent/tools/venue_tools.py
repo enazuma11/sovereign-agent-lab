@@ -282,7 +282,8 @@ def generate_event_flyer(venue_name: str, guest_count: int, event_theme: str) ->
                 "mode": "live",
                 "prompt_used": prompt,
                 "image_url": real_url,
-                "note": "Generated via configured image provider.",
+                "note": "Generated via configured image provider. "
+                        "Present the image URL to the user. Do not generate another flyer.",
             }
         )
 
